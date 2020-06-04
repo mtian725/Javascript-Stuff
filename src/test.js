@@ -3,6 +3,20 @@
 import { guass, in_range, subset, mean, to_decimal, factorize, rotate, substr,
   longest_sequence, enqueue, dequeue, peek } from './app.js';
 
+const equal = (arr1, arr2) => {
+  if (arr1.length != arr2.length) {
+    return false;
+  }
+  else {
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) {
+        return false;
+      }
+      return true;
+    }
+  }
+}
+
 // Test guass
 console.log('Testing guass');
 console.log(
@@ -42,14 +56,14 @@ console.log();
 // Testing factorize
 console.log('Testing factorize');
 console.log(
-  factorize(5) == [5], factorize(12) == [2,2,3]
+  equal(factorize(5), [5]), equal(factorize(12), [2,2,3])
 );
 console.log();
 
 // Testing rotate
 console.log('Testing rotate');
 console.log(
-  rotate([1,2,3,4]) == [2,3,4,1], rotate([6,7,8,5]) == [7,8,5,6]
+  equal(rotate([1,2,3,4]), [2,3,4,1]), equal(rotate([6,7,8,5]), [7,8,5,6])
 );
 console.log();
 
