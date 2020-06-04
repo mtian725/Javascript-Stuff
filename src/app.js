@@ -63,7 +63,7 @@ const to_decimal = arr => {
 const factorize = num => { // can assume that the input will always be >= 2
   let factor = 2;
   const arr = [];
-  while (num !=== 1) {
+  while (num !== 1) {
     if (num % 2 === 0) {
       arr.push(factor);
       num /= factor;
