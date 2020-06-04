@@ -89,6 +89,8 @@ const substr = (s, target) => {
     for (let i = 0; i < s.length - target.length; i++) {
       if (s[i] === target[0]) {
         for (let j = 1; j < target.length; j++){
+          console.log(s[i+j]);
+          console.log('=================')
           if (s[i+j] !== target[j]) {
             break
           }
