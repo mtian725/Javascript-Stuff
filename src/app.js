@@ -31,7 +31,7 @@ const subset = (set, target) => {
       if (target[i] === set[j]) {
         break
       }
-      else {
+      if (j === set.length) {
         return false;
       }
     }
