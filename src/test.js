@@ -70,7 +70,8 @@ console.log();
 // Testing substr
 console.log('Testing substr');
 console.log(
-
+  substr("rustacean", "ace") === True, substr("rustacean", "rcn") === False,
+  substr("rustacean", "") === True
 );
 console.log();
 
