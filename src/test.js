@@ -20,8 +20,8 @@ console.log();
 // Testing subset
 console.log('Testing subset');
 console.log(
-  subset([1,2,3,4,5], [1,5,2]) === True, subset([1,2,3,4,5], [1,2,7]) === False,
-  subset(['a','b','c'],[]) === True
+  subset([1,2,3,4,5], [1,5,2]) === true, subset([1,2,3,4,5], [1,2,7]) === false,
+  subset(['a','b','c'],[]) === true
 );
 console.log();
 
