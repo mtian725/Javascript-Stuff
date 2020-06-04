@@ -42,14 +42,14 @@ console.log();
 // Testing factorize
 console.log('Testing factorize');
 console.log(
-
+  factorize(5) == [5], factorize(12) == [2,2,3]
 );
 console.log();
 
 // Testing rotate
 console.log('Testing rotate');
 console.log(
-
+  rotate([1,2,3,4]) == [2,3,4,1], rotate([6,7,8,5]) == [7,8,5,6]
 );
 console.log();
 

@@ -56,17 +56,27 @@ const to_decimal = arr => {
   let dec = 0;
   for (let i = 0; i < arr.length; i++) {
     dec += Math.pow(2,i) * arr[arr.length - 1 - i];
-    console.log(dec);
   }
   return dec;
 };
 
-const factorize = () => {
-
+const factorize = num => { // can assume that the input will always be >= 2
+  let factor = 2;
+  const arr = [];
+  while (num !=== 1) {
+    if (num % 2 === 0) {
+      arr.push(factor);
+      num /= factor;
+    }
+    factor += 1;
+  }
+  return arr;
 };
 
-const rotate = () => {
-
+const rotate = arr => {
+  const front = arr.shift();
+  arr.push(front);
+  return arr;
 };
 
 const substr = () => {
