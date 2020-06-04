@@ -28,14 +28,14 @@ console.log();
 // Testing mean
 console.log('Testing mean');
 console.log(
-
+  mean([2.0,4.0,9.0]) === 5.0, mean([]) === null
 );
 console.log();
 
 // Testing to_decimal
 console.log('Testing to_decimal');
 console.log(
-
+  to_decimal([1,0,0]) === 4, to_decimal([1,1,1,1]) === 15
 );
 console.log();
 

@@ -39,12 +39,25 @@ const subset = (set, target) => {
   return true;
 };
 
-const mean = () => {
-
+const mean = arr => {
+  if (arr === []) {
+    return null;
+  }
+  else {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+    return sum/arr.length;
+  }
 };
 
-const to_decimal = () => {
-
+const to_decimal = arr => {
+  let dec = 0;
+  for (let i = 0; i < arr.length; i++) {
+    dec += Math.pow(2,i) * arr[i];
+  }
+  return dec;
 };
 
 const factorize = () => {
