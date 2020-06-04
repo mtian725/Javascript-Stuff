@@ -40,7 +40,7 @@ const subset = (set, target) => {
 };
 
 const mean = arr => {
-  if (arr === []) {
+  if (arr.length === 0) {
     return null;
   }
   else {
@@ -56,6 +56,7 @@ const to_decimal = arr => {
   let dec = 0;
   for (let i = 0; i < arr.length; i++) {
     dec += Math.pow(2,i) * arr[i];
+    console.log(dec);
   }
   return dec;
 };
