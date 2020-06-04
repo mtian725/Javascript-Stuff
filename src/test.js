@@ -1,4 +1,5 @@
 
+// note this is ES6+ syntax
 import { guass, in_range, subset, mean, to_decimal, factorize, rotate, substr,
   longest_sequence, enqueue, dequeue, peek } from './app.js';
 
