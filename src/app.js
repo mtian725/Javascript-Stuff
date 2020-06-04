@@ -69,6 +69,7 @@ const factorize = num => { // can assume that the input will always be >= 2
       num /= factor;
     }
     factor += 1;
+    console.log();
   }
   return arr;
 };
