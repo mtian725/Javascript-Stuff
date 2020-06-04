@@ -38,7 +38,7 @@ console.log('Testing to_decimal');
 console.log(
   to_decimal([1,0,0]) === 4, to_decimal([1,1,1,1]) === 15
 );
-console.log(to_decimal([1,1,1,1]));
+console.log(to_decimal([1,0,0]));
 console.log();
 
 // Testing factorize
