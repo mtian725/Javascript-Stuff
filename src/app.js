@@ -90,6 +90,7 @@ const substr = (s, target) => {
       if (s[i] === target[0]) {
         for (let j = 1; j < target.length; j++){
           console.log(s[i+j]);
+          console.log(target[j])
           console.log('=================')
           if (s[i+j] !== target[j]) {
             break
