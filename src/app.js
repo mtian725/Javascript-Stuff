@@ -15,12 +15,35 @@ const guass = num => {
   }
 };
 
-const in_range = () => {
-  
+const in_range = (arr, lb, ub) => { //lb - lower bound ; ub - upper bound
+  let counter = 0;
+  for( let i = 0; i < arr.length; i++){
+    if (arr[i] >= lb && arr[i] <= ub) {
+      counter += 1;
+    }
+  }
+  return counter;
 };
 
-const subset = () => {
-
+const subset = (set, target) => {
+  if (target === []) {
+    return true;
+  }
+  else {
+    for (let i = 0; i < set.length - target.length; i++) {
+      if (set[i] === target[0]) {
+        for (let j = 0; j < target.length; j++){
+          if (set[i+j] !== target[j]) {
+            break
+          }
+          if (j === target.length) {
+            return true
+          }
+        }
+      }
+    }
+    return false;
+  }
 };
 
 const mean = () => {
