@@ -26,24 +26,17 @@ const in_range = (arr, lb, ub) => { //lb - lower bound ; ub - upper bound
 };
 
 const subset = (set, target) => {
-  if (target === []) {
-    return true;
-  }
-  else {
-    for (let i = 0; i < set.length - target.length; i++) {
-      if (set[i] === target[0]) {
-        for (let j = 0; j < target.length; j++){
-          if (set[i+j] !== target[j]) {
-            break
-          }
-          if (j === target.length) {
-            return true
-          }
-        }
+  for (let i = 0; i < target.length; i++) {
+    for (let j = 0; i < set.length; j++) {
+      if (target[i] === set[j]) {
+        break
+      }
+      else {
+        return false;
       }
     }
-    return false;
   }
+  return true;
 };
 
 const mean = () => {
