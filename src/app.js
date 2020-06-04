@@ -55,7 +55,7 @@ const mean = arr => {
 const to_decimal = arr => {
   let dec = 0;
   for (let i = 0; i < arr.length; i++) {
-    dec += Math.pow(2,i) * arr[i];
+    dec += Math.pow(2,i) * arr[arr.length - 1 - i];
     console.log(dec);
   }
   return dec;
