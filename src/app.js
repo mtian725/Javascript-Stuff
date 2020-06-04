@@ -98,6 +98,7 @@ const substr = (s, target) => {
         }
       }
     }
+    return false;
   }
 };
 
