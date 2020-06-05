@@ -102,21 +102,4 @@ const substr = (s, target) => {
   }
 };
 
-const longest_sequence = () => {
-
-};
-
-const enqueue = () => {
-
-};
-
-const dequeue = () => {
-
-};
-
-const peek = () => {
-
-};
-
-export { guass, in_range, subset, mean, to_decimal, factorize, rotate, substr,
-  longest_sequence, enqueue, dequeue, peek };
+export { guass, in_range, subset, mean, to_decimal, factorize, rotate, substr };

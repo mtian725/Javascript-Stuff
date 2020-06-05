@@ -1,7 +1,7 @@
 
 // note this is ES6+ syntax
-import { guass, in_range, subset, mean, to_decimal, factorize, rotate, substr,
-  longest_sequence, enqueue, dequeue, peek } from './app.js';
+import { guass, in_range, subset, mean, to_decimal, factorize, rotate, substr
+ } from './app.js';
 
 const equal = (arr1, arr2) => {
   if (arr1.length != arr2.length) {
@@ -72,33 +72,5 @@ console.log('Testing substr');
 console.log(
   substr("rustacean", "ace") === true, substr("rustacean", "rcn") === false,
   substr("rustacean", "") === true
-);
-console.log();
-
-// Testing longest_sequence
-console.log('Testing longest_sequence');
-console.log(
-
-);
-console.log();
-
-// Testing enqueue
-console.log('Testing enqueue');
-console.log(
-
-);
-console.log();
-
-// Testing dequeue
-console.log('Testing dequeue');
-console.log(
-
-);
-console.log();
-
-// Testing peek
-console.log('Testing peek');
-console.log(
-
 );
 console.log();
